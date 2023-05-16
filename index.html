@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>색상바꾸기</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="svgContainner">
+        <svg
+          id="redheart"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 52.08 40.98"
+        >
+          <path
+            d="m23.2,11.53S4.81,1.66.94,12.89s18.58,35.61,31.74,24.97S59.01,6.31,46.62,1.47s-23.42,10.06-23.42,10.06Z"
+            style="fill: #e71f19; stroke: #231815; stroke-miterlimit: 10"
+          />
+        </svg>
+      </div>
+
+      <div class="colorList freSEt">
+        <button class="colorBtn button-teal"></button>
+        <button class="colorBtn button-salmon"></button>
+        <button class="colorBtn button-darkseagreen"></button>
+      </div>
+      <div class="colorList userColor"></div>
+      <div class="rgbSlider">
+        <label for="slider"
+          >R
+          <input
+            type="range"
+            id="redSlider"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <span id="redValue">255</span>
+        </label>
+
+        <label for="greenSlider"
+          >G
+          <input
+            type="range"
+            id="greenSlider"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <span id="greenValue">255</span>
+        </label>
+
+        <label for="blueSlider"
+          >B
+          <input
+            type="range"
+            id="blueSlider"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <span id="blueValue">255</span>
+        </label>
+      </div>
+      <div>
+        <button class="save" id="save">색 저장</button>
+      </div>
+    </div>
+  </body>
+</html>
